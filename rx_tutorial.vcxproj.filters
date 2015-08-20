@@ -1,304 +1,296 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Source Files\node_util">
+    <Filter Include="node_util">
       <UniqueIdentifier>{719ef01b-8f33-4b0b-945a-68adfe3167e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\tutorial">
+    <Filter Include="tutorial">
       <UniqueIdentifier>{eb793da0-78a0-4b82-a1e7-62b055eb8fae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\rxcpp">
+    <Filter Include="rxcpp">
       <UniqueIdentifier>{287f7fb1-7ac6-4715-97da-3947ab4537ce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\rxcpp\operators">
+    <Filter Include="rxcpp\operators">
       <UniqueIdentifier>{e1426422-9826-4545-b82d-ed67b1def101}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\rxcpp\schedulers">
+    <Filter Include="rxcpp\schedulers">
       <UniqueIdentifier>{3bca7155-99af-4f33-be56-13ace8e4c90d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\rxcpp\subjects">
+    <Filter Include="rxcpp\subjects">
       <UniqueIdentifier>{ad3066fa-ba7d-40ce-a2bd-b295a2a7d32a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\rxcpp\sources">
+    <Filter Include="rxcpp\sources">
       <UniqueIdentifier>{c02d168b-9e87-432a-840c-d1dfc912596b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="node_util\node_util.hpp">
-      <Filter>Source Files\node_util</Filter>
+      <Filter>node_util</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-connectable_observable.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-coordination.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-grouped_observable.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-includes.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-notification.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-observable.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-observer.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-operators.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-predef.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-scheduler.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-sources.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-subjects.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-subscriber.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-subscription.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-test.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-trace.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\rx-util.hpp">
-      <Filter>Source Files\rxcpp</Filter>
+      <Filter>rxcpp</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-create.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-defer.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-error.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-interval.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-iterate.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-never.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-range.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-scope.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\sources\rx-timer.hpp">
-      <Filter>Source Files\rxcpp\sources</Filter>
+      <Filter>rxcpp\sources</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\subjects\rx-behavior.hpp">
-      <Filter>Source Files\rxcpp\subjects</Filter>
+      <Filter>rxcpp\subjects</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\subjects\rx-replaysubject.hpp">
-      <Filter>Source Files\rxcpp\subjects</Filter>
+      <Filter>rxcpp\subjects</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\subjects\rx-subject.hpp">
-      <Filter>Source Files\rxcpp\subjects</Filter>
+      <Filter>rxcpp\subjects</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\subjects\rx-synchronize.hpp">
-      <Filter>Source Files\rxcpp\subjects</Filter>
+      <Filter>rxcpp\subjects</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-currentthread.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-eventloop.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-immediate.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-newthread.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-runloop.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-sameworker.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-test.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\schedulers\rx-virtualtime.hpp">
-      <Filter>Source Files\rxcpp\schedulers</Filter>
+      <Filter>rxcpp\schedulers</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-amb.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-buffer_count.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-buffer_time.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-buffer_time_count.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-combine_latest.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-concat.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-concat_map.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-connect_forever.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-distinct_until_changed.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-filter.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-finally.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-flat_map.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-group_by.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-lift.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-map.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-merge.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-multicast.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-observe_on.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-on_error_resume_next.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-pairwise.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-publish.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-reduce.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-ref_count.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-repeat.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-replay.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-retry.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-scan.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-skip.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-skip_until.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-start_with.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-subscribe.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-subscribe_on.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-switch_on_next.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-take.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-take_until.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-tap.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-window.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-window_time.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-window_time_count.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="rxcpp\operators\rx-zip.hpp">
-      <Filter>Source Files\rxcpp\operators</Filter>
+      <Filter>rxcpp\operators</Filter>
     </ClInclude>
     <ClInclude Include="node_util\basic.hpp">
-      <Filter>Source Files\node_util</Filter>
+      <Filter>node_util</Filter>
     </ClInclude>
     <ClInclude Include="node_util\console.hpp">
-      <Filter>Source Files\node_util</Filter>
+      <Filter>node_util</Filter>
     </ClInclude>
     <ClInclude Include="node_util\set_timeout.hpp">
-      <Filter>Source Files\node_util</Filter>
+      <Filter>node_util</Filter>
     </ClInclude>
     <ClInclude Include="node_util\string_conversion.hpp">
-      <Filter>Source Files\node_util</Filter>
+      <Filter>node_util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tutorial\main.cpp">
-      <Filter>Source Files\tutorial</Filter>
+      <Filter>tutorial</Filter>
     </ClCompile>
     <ClCompile Include="tutorial\01_01.cpp">
-      <Filter>Source Files\tutorial</Filter>
+      <Filter>tutorial</Filter>
     </ClCompile>
     <ClCompile Include="tutorial\01_02.cpp">
-      <Filter>Source Files\tutorial</Filter>
+      <Filter>tutorial</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="tutorial\01_01.md">
-      <Filter>Source Files\tutorial</Filter>
+      <Filter>tutorial</Filter>
     </None>
   </ItemGroup>
 </Project>
