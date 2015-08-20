@@ -29,15 +29,18 @@
     <ClInclude Include="node_util\node_util_set_timeout.hpp">
       <Filter>Source Files\node_util</Filter>
     </ClInclude>
-    <ClInclude Include="node_util\util.hpp">
+    <ClInclude Include="node_util_string_conversion.hpp">
       <Filter>Source Files\node_util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tutorial\01.01.cpp">
+    <ClCompile Include="tutorial\main.cpp">
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="tutorial\main.cpp">
+    <ClCompile Include="tutorial\01_01.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\01_02.cpp">
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
   </ItemGroup>

@@ -124,10 +124,11 @@
     <ClInclude Include="node_util\node_util_basic.hpp" />
     <ClInclude Include="node_util\node_util_console.hpp" />
     <ClInclude Include="node_util\node_util_set_timeout.hpp" />
-    <ClInclude Include="node_util\util.hpp" />
+    <ClInclude Include="node_util_string_conversion.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tutorial\01.01.cpp" />
+    <ClCompile Include="tutorial\01_01.cpp" />
+    <ClCompile Include="tutorial\01_02.cpp" />
     <ClCompile Include="tutorial\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
