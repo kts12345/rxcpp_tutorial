@@ -110,7 +110,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\git\RxCpp\Rx\v2\src;C:\local\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\git\RxCpp\Rx\v2\src;C:\local\boost_1_59_0;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -120,15 +120,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01.01.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="node_util\node_util.hpp" />
     <ClInclude Include="node_util\node_util_basic.hpp" />
     <ClInclude Include="node_util\node_util_console.hpp" />
     <ClInclude Include="node_util\node_util_set_timeout.hpp" />
     <ClInclude Include="node_util\util.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tutorial\01.01.cpp" />
+    <ClCompile Include="tutorial\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

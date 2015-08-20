@@ -9,7 +9,6 @@ using namespace std::literals::chrono_literals;
 using namespace node_util;
 
 
-
 void test_01_01(boost::asio::io_service& io_service)
 {
   namespace rx = rxcpp;

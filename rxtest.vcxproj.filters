@@ -12,14 +12,9 @@
     <Filter Include="Source Files\node_util">
       <UniqueIdentifier>{719ef01b-8f33-4b0b-945a-68adfe3167e5}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="01.01.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Source Files\tutorial">
+      <UniqueIdentifier>{eb793da0-78a0-4b82-a1e7-62b055eb8fae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="node_util\node_util.hpp">
@@ -37,5 +32,13 @@
     <ClInclude Include="node_util\util.hpp">
       <Filter>Source Files\node_util</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tutorial\01.01.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\main.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
