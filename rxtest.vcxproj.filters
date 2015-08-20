@@ -44,4 +44,9 @@
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="tutorial\01_01.md">
+      <Filter>Source Files\tutorial</Filter>
+    </None>
+  </ItemGroup>
 </Project>
