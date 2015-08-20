@@ -9,7 +9,6 @@ namespace rx = rxcpp;
 
 void test_01_02()
 {
-
   auto source = rx::observable<>::create<int>([&](auto& observer) {
     set_timeout([=]{
         observer.on_next(42);
