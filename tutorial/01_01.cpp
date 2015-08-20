@@ -26,5 +26,3 @@ void test_01_01() {
                                            handler_completed);
   return;
 }
-
-// see https://github.com/kts12345/rxcpp_tutorial/tree/master/tutorial/01_01.md
