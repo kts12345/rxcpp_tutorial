@@ -24,8 +24,8 @@ namespace console {
     }
   }
 
-static auto log = [](auto&& ...args)
-{
+static auto log = [](auto&& ...args) {
+
   auto args_tuple = std::make_tuple(args...);
 
   imple_tuple_print::print(std::cout, 

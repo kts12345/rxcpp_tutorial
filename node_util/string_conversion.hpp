@@ -23,8 +23,8 @@ std::string operator+ (const T& t, const std::string& str) {
 }// end of namespace string_conversion 
 }// end of namespace node_util
 
-static std::string to_string(std::exception_ptr eptr)
-{
+static std::string to_string(std::exception_ptr eptr) {
+
   try {
     if (eptr) {
       std::rethrow_exception(eptr);
