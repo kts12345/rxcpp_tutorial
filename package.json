@@ -1,0 +1,10 @@
+{
+  "name": "node_version",
+  "version": "0.0.0",
+  "description": "node_version",
+  "main": "./tutorial/main.js",
+  "author": {
+    "name": "kts123",
+    "email": ""
+  }
+}

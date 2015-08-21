@@ -10,12 +10,12 @@ using evt_t  = int;
 void test_01_01() {
 
   auto on_subscribe = [](auto& observer) {
-    observer.on_next(evt_t(10));
     observer.on_next(evt_t(11));
+    observer.on_next(evt_t(12));
     observer.on_completed();
   };
 
-  auto handler_next      = [](evt_t e) { console::log("on_next: "s  + e); };
+  auto handler_next      = [](evt_t i) { console::log("on_next: "s  + i); };
   auto handler_error     = [](auto  e) { console::log("on_error: "s + e); };
   auto handler_completed = []          { console::log("on_completed"); };
 
@@ -24,5 +24,5 @@ void test_01_01() {
   auto subscription = observable.subscribe(handler_next,
                                            handler_error,
                                            handler_completed);
-  return;
 }
+
