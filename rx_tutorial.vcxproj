@@ -39,6 +39,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(BOOST_ROOT);.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -136,7 +137,7 @@
   <ItemGroup>
     <ClCompile Include="tutorial\01_01.cpp" />
     <ClCompile Include="tutorial\01_02.cpp" />
-    <ClCompile Include="tutorial\main.cpp" />
+    <ClCompile Include="tutorial\main_creating.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="tutorial\01_01.md" />

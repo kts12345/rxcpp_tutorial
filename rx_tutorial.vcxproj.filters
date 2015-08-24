@@ -278,13 +278,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tutorial\main.cpp">
-      <Filter>tutorial</Filter>
-    </ClCompile>
     <ClCompile Include="tutorial\01_01.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
     <ClCompile Include="tutorial\01_02.cpp">
+      <Filter>tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\main_creating.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
   </ItemGroup>

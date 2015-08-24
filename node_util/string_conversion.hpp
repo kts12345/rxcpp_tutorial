@@ -24,15 +24,25 @@ std::string operator+ (const T& t, const std::string& str) {
 }// end of namespace node_util
 
 static std::string to_string(std::exception_ptr eptr) {
-
-  try {
-    if (eptr) {
+  if (eptr) {
+    try {
       std::rethrow_exception(eptr);
     }
+    catch (const std::exception& e) {
+      return e.what();
+    }
+    catch (const std::string& e) {
+      return e;
+    }
+    catch (const char* e) {
+      return e;
+    }
+   catch (...) {
+     return "SEH Exception occur! (maybe)";
+    }
   }
-  catch (const std::exception& e) {
-    return e.what();
-  }
+
+  return "null_ptr exception";
 }
 
 #endif //__NODE_UTIL_STRING_CONVERSION_HPP__

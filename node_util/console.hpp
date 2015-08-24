@@ -34,6 +34,9 @@ static auto log = [](auto&& ...args) {
   std::cout << std::endl;
 };
 
+//todo: 
+static auto error = log;
+static auto info  = log;
 
 }// end of namespace console
 }// end of namespace node_util
