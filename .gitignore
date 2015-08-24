@@ -4,3 +4,7 @@
 /rxtest.opensdf
 /rx_tutorial.sdf
 /.ntvs_analysis.dat
+/bin
+/Debug
+/obj
+/.gitattributes
