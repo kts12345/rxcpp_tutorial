@@ -12,7 +12,7 @@ function test_01_01() {
   var whenSubscribe = (observer) => {
     observer.onNext(31);
     observer.onNext(32);
-   // observer.onCompleted();
+    //observer.onCompleted();
     
     var whenDispose = () => {
       console.log("when dispose");

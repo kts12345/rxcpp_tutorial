@@ -3,16 +3,14 @@
 #include "rxcpp/rx.hpp"
 #include "node_util/node_util.hpp"
 
-using namespace node_util; // console, "string"s +, 5000ms
+using namespace node_util; // console, "string"s + 
 namespace rx = rxcpp;
 using evt_t  = int;
 
 void test_01_01() {
 //-----------------------------------------------------------------------------
   auto when_subscribe = [](auto& observer) {
-    char* a = nullptr;
     observer.on_next(evt_t(11));
-    *a = 'a';
     observer.on_next(evt_t(12));
     observer.on_completed();
   };

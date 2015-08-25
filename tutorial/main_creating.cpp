@@ -14,8 +14,8 @@ void test_main() {
 //-----------------------------------------------------------------------------
 }
 
-
 int main(int argc, char** argv) {
+
   boost::asio::io_service io_service;
 
   node_util::default_io_service(&io_service);
