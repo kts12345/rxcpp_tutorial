@@ -2,7 +2,7 @@
   "name": "node_version",
   "version": "0.0.0",
   "description": "node_version",
-  "main": "./tutorial/main_crating.js",
+  "main": "./tutorial/main.js",
   "author": {
     "name": "kts12345",
     "email": "http://github.com/kts12345"

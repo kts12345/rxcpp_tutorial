@@ -18,7 +18,8 @@ function test_01_02() {
     setTimeout(gen_events, 1000);
   };
   
-  var handler_next      = (i)=> console.log  ("on_next: "  + i);
+  var handler_next = (i)=> 
+  console.log("on_next: " + i);
   var handler_error     = (e)=> console.error("on_error: " + e.message);
   var handler_completed = () => console.info ("on_completed");
   
