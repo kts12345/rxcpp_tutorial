@@ -291,12 +291,4 @@
       <Filter>tutorial</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="tutorial\01_01.md">
-      <Filter>tutorial</Filter>
-    </None>
-    <None Include="tutorial\01_02.md">
-      <Filter>tutorial</Filter>
-    </None>
-  </ItemGroup>
 </Project>

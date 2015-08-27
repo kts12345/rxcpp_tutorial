@@ -9,7 +9,7 @@ using evt_t  = int;
 
 void test_01_01() {
 //-----------------------------------------------------------------------------
-  auto when_subscribe = [](auto& observer) {
+  auto on_subscribe = [](auto& observer) {
     observer.on_next(evt_t(11));
     observer.on_next(evt_t(12));
     observer.on_completed();
@@ -19,7 +19,7 @@ void test_01_01() {
   auto handler_error     = [](auto  e) { console::error("on_error: "s + e); };
   auto handler_completed = []          { console::info ("on_completed");    };
 
-  auto observable   = rx::observable<>::create<evt_t>(when_subscribe);
+  auto observable   = rx::observable<>::create<evt_t>(on_subscribe);
   auto subscription = observable.subscribe(handler_next,
                                            handler_error,
                                            handler_completed);

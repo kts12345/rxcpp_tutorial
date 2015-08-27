@@ -9,23 +9,20 @@ using evt_t  = int;
 
 void test_01_02() {
 //-----------------------------------------------------------------------------
-  auto when_subscribe = [](auto& observer) {
+  auto on_subscribe = [](auto& observer) {
     auto gen_events = [observer] {
       observer.on_next(evt_t(21));
       observer.on_next(evt_t(22));
       observer.on_completed();
     };
-    set_timeout(gen_events, 1000ms);
-    return []() {
-      console::info("on_dispose");
-    };
+    set_timeout(gen_events, 2000ms);
   };
 
   auto handler_next      = [](evt_t i) { console::log  ("on_next: "s  + i); };
   auto handler_error     = [](auto  e) { console::error("on_error: "s + e); };
   auto handler_completed = []          { console::info ("on_completed");    };
 
-  auto observable   = rx::observable<>::create<evt_t>(when_subscribe);
+  auto observable   = rx::observable<>::create<evt_t>(on_subscribe);
   auto subscription = observable.subscribe(handler_next,
                                            handler_error,
                                            handler_completed);

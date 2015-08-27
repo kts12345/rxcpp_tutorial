@@ -141,10 +141,6 @@
     <ClCompile Include="tutorial\01_03.cpp" />
     <ClCompile Include="tutorial\main.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="tutorial\01_01.md" />
-    <None Include="tutorial\01_02.md" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -9,24 +9,23 @@ var Rx = require("rx")
 
 function test_01_02() {
 //-----------------------------------------------------------------------------
-  var whenSubscribe = (observer) => {
-    var gen_events = () => {
+  function onSubscribe(observer) {
+    function genEvents() {
       observer.onNext(21);
       observer.onNext(22);
       observer.onCompleted();
     };
-    setTimeout(gen_events, 1000);
+    setTimeout(genEvents, 2000);
   };
   
-  var handler_next = (i)=> 
-  console.log("on_next: " + i);
-  var handler_error     = (e)=> console.error("on_error: " + e.message);
-  var handler_completed = () => console.info ("on_completed");
+  var handlerNext =       i => console.log  ("onNext: " + i);
+  var handlerError =      e => console.error("onError: " + e.message);
+  var handlerCompleted = () => console.info ("onCompleted");
   
-  var observable   = Rx.Observable.create(whenSubscribe);
-  var subscription = observable.subscribe(handler_next,
-                                          handler_error,
-                                          handler_completed);
+  var observable   = Rx.Observable.create(onSubscribe);
+  var subscription = observable.subscribe(handlerNext,
+                                          handlerError,
+                                          handlerCompleted);
 //-----------------------------------------------------------------------------
 };
 
