@@ -15,7 +15,6 @@ inline  void print(std::string arg) {
             << arg << std::endl;
 }
 
-//todo: 
 inline void log(std::string arg) {
   print(" [LOG]   " + arg);
 }
