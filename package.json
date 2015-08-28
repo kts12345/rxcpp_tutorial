@@ -6,5 +6,9 @@
   "author": {
     "name": "kts12345",
     "email": "http://github.com/kts12345"
+  },
+  "dependencies": {
+    "console-stamp": "^0.2.0",
+    "rx": "^3.1.1"
   }
 }
