@@ -25,8 +25,8 @@ function test_01_01() {
   //--------------
   var observable   = Rx.Observable.create(onSubscribe);
   var subscription = observable.subscribe(handlerNext,
-										                      handlerError,
-										                      handlerCompleted);
+                                          handlerError,
+                                          handlerCompleted);
 //-----------------------------------------------------------------------------
 }
 
