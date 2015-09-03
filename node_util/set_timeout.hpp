@@ -1,6 +1,7 @@
 #ifndef  __NODE_UTIL_SET_TIMEOUT_HPP__
 #define  __NODE_UTIL_SET_TIMEOUT_HPP__
 
+#include <atomic>
 #include <boost/asio/system_timer.hpp>
 #include <boost/optional.hpp>
 
@@ -26,23 +27,35 @@ g_timers() {
   return _timers;
 }
 
+struct timer_id
+{
+  static inline timer_id make_next_id() {
+    static std::atomic<unsigned int> _id(0xB0000000);
+    return timer_id{ ++_id };
+  }
+  unsigned int id;
+};
+
 template<typename callback_t, typename time_t>
-static int set_timeout(callback_t& callback, 
+int set_timeout(callback_t& callback, 
                         time_t&     time, 
                         io_service* io = nullptr) {
 
-  static int _id = 0;
-  auto id = _id++;
+  auto id = timer_id::make_next_id().id;
 
   auto& io_service = *default_io_service(io);
 
   auto timer = std::make_shared<system_timer>(io_service, time);
   g_timers()[id] = timer;
 
+  //std::cout << "id : " << id << std::endl;
+
   timer->async_wait([callback, id](auto& ec) {
-    g_timers()[id].reset();
     if (!ec)
       callback();
+   // else
+   //   std::cout << "timeout err" << ec.message() << std::endl;
+    g_timers()[id].reset();
   });
 
   return id;

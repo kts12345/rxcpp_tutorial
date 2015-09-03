@@ -531,6 +531,7 @@
     <Compile Include="tutorial\01_01.js" />
     <Compile Include="tutorial\01_02.js" />
     <Compile Include="tutorial\01_03.js" />
+    <Compile Include="tutorial\01_04.js" />
     <Compile Include="tutorial\main.js" />
   </ItemGroup>
   <ItemGroup>

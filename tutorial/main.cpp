@@ -8,6 +8,7 @@ using namespace node_util; // console, default_io_service
 void test_01_01();
 void test_01_02();
 void test_01_03();
+void test_01_04();
 
 int main(int argc, char** argv) {
   
@@ -19,7 +20,8 @@ int main(int argc, char** argv) {
   //-----------------------------------------------------------------------------
   //  test_01_01();
   //  test_01_02();
-    test_01_03();
+  //  test_01_03();
+    test_01_04();
   //-----------------------------------------------------------------------------
   }
 
