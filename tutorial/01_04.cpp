@@ -53,6 +53,6 @@ void test_01_04() {
 [14:44:51] [LOG]   ----- test start -----
 [14:44:52] [LOG]   on_next: 31
 [14:44:53] [LOG]   on_dispose
-[14:44:56] [LOG]   ----- test end    -----
+[14:44:53] [LOG]   ----- test end    -----
 
 */

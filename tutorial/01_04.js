@@ -50,9 +50,9 @@ function test_01_04() {
 /* 실행결과
 
 [14:50:01] [LOG] ----- test start -----
-[14:50:02] [LOG] onNext: 31
+[14:50:02] [LOG] onNext: 41
 [14:50:03] [LOG] onDispose
-[14:50:06] [LOG] ----- test end   -----
+[14:50:03] [LOG] ----- test end   -----
 
  */
 module.exports = test_01_04;
