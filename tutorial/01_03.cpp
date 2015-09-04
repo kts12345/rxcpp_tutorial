@@ -13,9 +13,9 @@ void test_01_03() {
   //-----------------------------------------------------------------------------
   auto on_subscribe = [](auto& observer) {
     std::array<std::function<void()>, 3> events = {
-      [=] { observer.on_next(evt_t(31)); }
-    , [=] { observer.on_completed();     }
-    , [=] { observer.on_next(evt_t(32)); }
+        [=] { observer.on_next(evt_t(31)); }
+      , [=] { observer.on_completed();     }
+      , [=] { observer.on_next(evt_t(32)); }
     };
 
     set_timeout(events[0], 1000ms);

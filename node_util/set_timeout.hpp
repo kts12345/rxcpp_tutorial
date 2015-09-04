@@ -30,7 +30,7 @@ g_timers() {
 struct timer_id
 {
   static inline timer_id make_next_id() {
-    static std::atomic<unsigned int> _id(0xB0000000);
+    static std::atomic<unsigned int> _id(0);
     return timer_id{ ++_id };
   }
   unsigned int id;
@@ -48,14 +48,10 @@ int set_timeout(callback_t& callback,
   auto timer = std::make_shared<system_timer>(io_service, time);
   g_timers()[id] = timer;
 
-  //std::cout << "id : " << id << std::endl;
-
   timer->async_wait([callback, id](auto& ec) {
     if (!ec)
       callback();
-   // else
-   //   std::cout << "timeout err" << ec.message() << std::endl;
-    g_timers()[id].reset();
+    g_timers().erase(id);
   });
 
   return id;
@@ -65,7 +61,7 @@ inline void clear_timeout(int id)
 {
   using namespace std::literals::chrono_literals;
 
-  if (g_timers()[id])
+  if (g_timers().find(id) != g_timers().end())
   {
     g_timers()[id]->expires_from_now(0ms);
   }
