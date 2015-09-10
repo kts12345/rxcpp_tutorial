@@ -293,5 +293,8 @@
     <ClCompile Include="tutorial\01_04.cpp">
       <Filter>tutorial</Filter>
     </ClCompile>
+    <ClCompile Include="tutorial\01_05.cpp">
+      <Filter>tutorial</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
